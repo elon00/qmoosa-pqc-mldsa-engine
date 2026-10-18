@@ -1,0 +1,33 @@
+{
+  "name": "@qmoosa/pqc-mldsa-engine",
+  "version": "1.0.0",
+  "description": "QMOOSA Post-Quantum Cryptography — NIST FIPS 204 ML-DSA Audited Signature Engine & Invariant Verification",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/engine.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@noble/post-quantum": "^0.7.1",
+    "@qmoosa/pqc-mldsa-protocol": "file:../qmoosa-pqc-mldsa-protocol"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "pqc",
+    "fips-204",
+    "ml-dsa",
+    "dilithium",
+    "signature-engine",
+    "noble",
+    "quantum-safe"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
